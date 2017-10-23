@@ -1,4 +1,7 @@
 all: isniff
 
 isniff:
-	$(CC) src/*.c -Iinclude -limobiledevice -lplist
+	$(CC) -g -o isniff src/*.c -Iinclude -limobiledevice -lplist
+
+clean:
+	rm -f isniff
